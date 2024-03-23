@@ -216,7 +216,7 @@ class AuthController extends Controller
     {
         $params = $this->request->all();
 
-        if ($params["language"] === "fr") {
+        if ($params["lang"] === "fr") {
             return response()->json([
                 'language' => "Français"
             ]);
